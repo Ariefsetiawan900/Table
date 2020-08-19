@@ -1,0 +1,72 @@
+[
+    {
+        "_id": 1190,
+        "name": "Septian",
+        "locations": "Jakarta",
+        "areas": "Emporium Mall",
+        "jobs": "security",
+        "enter": "08.05",
+        "back": "17.05",
+        "interval": "09.15"
+      },
+      {
+        "_id": 1191,
+        "name": "Budi",
+        "locations": "Jakarta",
+        "areas": "Emporium Mall",
+        "jobs": "security",
+        "enter": "08.05",
+        "back": "17.05",
+        "interval": "09.15"
+      },
+      {
+        "_id": 1192,
+        "name": "budian",
+        "locations": "Jakarta",
+        "areas": "Emporium Mall",
+        "jobs": "security",
+        "enter": "08.05",
+        "back": "17.05",
+        "interval": "09.15"
+      },
+      {
+        "_id": 1193,
+        "name": "bolean",
+        "locations": "Jakarta",
+        "areas": "Emporium Mall",
+        "jobs": "security",
+        "enter": "08.05",
+        "back": "17.05",
+        "interval": "09.15"
+      },
+      {
+        "_id": 1194,
+        "name": "kesanggupan",
+        "locations": "Jakarta",
+        "areas": "Emporium Mall",
+        "jobs": "security",
+        "enter": "08.05",
+        "back": "17.05",
+        "interval": "09.15"
+      },
+      {
+        "_id": 1195,
+        "name": "okelah",
+        "locations": "Jakarta",
+        "areas": "Emporium Mall",
+        "jobs": "security",
+        "enter": "08.05",
+        "back": "17.05",
+        "interval": "09.15"
+      },
+      {
+        "_id": 1196,
+        "name": "gue",
+        "locations": "Jakarta",
+        "areas": "Emporium Mall",
+        "jobs": "security",
+        "enter": "08.05",
+        "back": "17.05",
+        "interval": "09.15"
+      }
+]

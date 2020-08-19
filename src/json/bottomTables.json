@@ -1,0 +1,9 @@
+[
+    { "_id": "JKT", "name": "Jakarta" },
+    { "_id": "SBY", "name": "Surabaya" },
+    { "_id": "YYK", "name": "Yogyakarta" },
+    { "_id": "TBN", "name": "Tuban" },
+    { "_id": "SMN", "name": "Sleman" },
+    { "_id": "SLO", "name": "Solo" },
+    { "_id": "TNG", "name": "Tangerang" }
+]

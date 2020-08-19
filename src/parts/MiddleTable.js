@@ -1,41 +1,45 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+
+import Middle from "../table/Middle";
+import Pagination from "../components/Pagination";
 
 export default function MiddleTable() {
+  const [posts, setPosts] = useState([]);
+  const [loading, setLoading] = useState(false);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [postsPerPage] = useState(5);
+
+  useEffect(() => {
+    const fetchPosts = async () => {
+      setLoading(true);
+      const res = await axios.get("https://api.mocki.io/v1/01fdfe57");
+      setPosts(res.data);
+      setLoading(false);
+    };
+
+    fetchPosts();
+  }, []);
+
+  // Get current posts
+  const indexOfLastPost = currentPage * postsPerPage;
+  const indexOfFirstPost = indexOfLastPost - postsPerPage;
+  const currentPosts = posts.slice(indexOfFirstPost, indexOfLastPost);
+
+  // Change page
+  const paginate = (pageNumber) => setCurrentPage(pageNumber);
+
   return (
-    <section>
-      <div className="container">
-          <h6>Data Absensi</h6>
-        <table class="table table-bordered mb-5">
-          <thead className="bg-success text-center text-white">
-            <tr>
-              <th scope="col">Nik</th>
-              <th scope="col">Nama</th>
-              <th scope="col">Lokasi</th>
-              <th scope="col">Area</th>
-              <th scope="col">Job Title</th>
-              <th scope="col">Masuk</th>
-              <th scope="col">Pulang</th>
-              <th scope="col">Interval</th>
-              <th scope="col">Tools</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td className="text-center">1190</td>
-              <td>Septian</td>
-              <td>Jakarta</td>
-              <td>Emporium Mall</td>
-              <td>Security</td>
-              <td>08.05</td>
-              <td>17.15</td>
-              <td>09.01</td>
-              <td className="bg-primary text-white">View</td>
-            </tr>
-          
-          </tbody>
-        </table>
-        <span>Note : Menu Karyawan dan data Absensi beda page</span>
-      </div>
+    <section className="container">
+      <Middle posts={currentPosts} loading={loading} />
+      <Pagination
+        postsPerPage={postsPerPage}
+        totalPosts={posts.length}
+        paginate={paginate}
+      />
+      <span>Note : Menu Karyawan dan data Absensi beda page</span>
+      <br />
+      <br />
     </section>
   );
 }
