@@ -1,9 +1,11 @@
 import React from "react";
 
+
 export default function Top({ posts, loading }) {
   if (loading) {
     return <h2>Loading...</h2>;
   }
+  
   return (
     <div className="table-responsive">
       <h6>Karyawan</h6>
@@ -30,7 +32,7 @@ export default function Top({ posts, loading }) {
                 <td className="text-right">
                   <button
                     className="btn btn-primary badge-pill mr-2 "
-                    style={{ width: "80px" }}
+                    style={{ width: "80px" }} 
                   >
                     View
                   </button>
@@ -52,6 +54,8 @@ export default function Top({ posts, loading }) {
           })}
         </tbody>
       </table>
+
+     
     </div>
   );
 }

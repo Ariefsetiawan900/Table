@@ -4,6 +4,9 @@ import { BrowserRouter as Router, Route} from 'react-router-dom'
 import Dashboard from './Pages/Dashboard'
 import Example from './Pages/Example'
 
+// import 'jquery/dist/jquery.min.js';
+// import 'popper.js/dist/popper.min.js';
+// import 'bootstrap/dist/js/bootstrap.min.js';
 
 import "./assets/scss/style.scss";
 
