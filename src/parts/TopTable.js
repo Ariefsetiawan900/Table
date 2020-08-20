@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import { CSVLink } from "react-csv";
 
 import Top from "../table/Top";
 import Pagination from "../components/Pagination";
@@ -29,8 +30,35 @@ export default function TopTable() {
   // Change page
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
+  const headers = [
+    { label: "Nik", key: "id" },
+    { label: "Nama", key: "name" },
+    { label: "Lokasi", key: "locations" },
+    { label: "Area", key: "areas" },
+    { label: "Job Title", key: "jobs" },
+  ];
+
   return (
     <section className="container">
+      <h5>Karyawan</h5>
+      <CSVLink
+        data={posts}
+        headers={headers}
+        filename={"data-karyawan.csv"}
+        className="btn btn-info mb-3"
+        target="_blank"
+      >
+        Eksport File.csv
+      </CSVLink>
+      <CSVLink
+        data={posts}
+        headers={headers}
+        filename={"data-karyawan.xls"}
+        className="btn btn-info mb-3 ml-2"
+        target="_blank"
+      >
+        Eksport File.excel
+      </CSVLink>
       <Top posts={currentPosts} loading={loading} />
       <Pagination
         postsPerPage={postsPerPage}

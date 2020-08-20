@@ -6,7 +6,6 @@ export default function Middle({ posts, loading }) {
   }
   return (
     <div className=" table-responsive">
-      <h6>Data Absensi</h6>
       <table className="table table-bordered mb-5 table-striped">
         <thead className="bg-success text-center text-white">
           <tr>
