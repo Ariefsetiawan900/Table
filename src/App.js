@@ -1,8 +1,8 @@
 import React from "react";
-import { BrowserRouter as Router, Route} from 'react-router-dom'
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
-import Dashboard from './Pages/Dashboard'
-import Example from './Pages/Example'
+import Dashboard from "./Pages/Dashboard";
+import Example from "./Pages/Example";
 
 // import 'jquery/dist/jquery.min.js';
 // import 'popper.js/dist/popper.min.js';
@@ -14,9 +14,8 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Route exact path="/" component={Dashboard}/>
-        <Route exact path="/example" component={Example}/>
-
+        <Route exact path="/" component={Dashboard} />
+        <Route exact path="/example" component={Example} />
       </Router>
     </div>
   );

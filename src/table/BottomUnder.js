@@ -7,7 +7,10 @@ export default function BottomUnder({ posts, loading }) {
   return (
     <div className="table-responsive">
       <h6>Lokasi</h6>
-      <table className="table table-bordered table-striped" style={{ width: "55%" }}>
+      <table
+        className="table table-bordered table-striped"
+        style={{ width: "55%" }}
+      >
         <thead className="bg-primary text-center text-white">
           <tr>
             <th scope="col">Kode Area</th>
