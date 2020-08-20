@@ -6,7 +6,7 @@ export default function Top({ posts, loading }) {
   }
 
   return (
-    <div className="table-responsive">
+    <div className="table-responsive topup">
       <table className="table table-bordered table-striped">
         <thead className="thead-dark text-center">
           <tr>
@@ -29,23 +29,26 @@ export default function Top({ posts, loading }) {
                 <td>{item.jobs}</td>
                 <td className="text-right">
                   <button
-                    className="btn btn-primary badge-pill mr-2 "
+                    className="btn btn-primary badge-pill  "
                     style={{ width: "80px" }}
                   >
                     View
                   </button>
+                  {" "}{" "}
                   <button
-                    className="btn btn-warning badge-pill mr-2"
+                    className="btn btn-warning badge-pill "
                     style={{ width: "80px" }}
                   >
                     Update
                   </button>
+                  {" "}{" "}
                   <button
                     className="btn btn-danger badge-pill"
                     style={{ width: "80px" }}
                   >
                     Delete
                   </button>
+                  {" "}{" "}
                 </td>
               </tr>,
             ];

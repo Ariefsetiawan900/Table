@@ -5,7 +5,7 @@ export default function Middle({ posts, loading }) {
     return <h2>Loading...</h2>;
   }
   return (
-    <div className=" table-responsive">
+    <div className=" table-responsive topdown">
       <table className="table table-bordered mb-5 table-striped">
         <thead className="bg-success text-center text-white">
           <tr>

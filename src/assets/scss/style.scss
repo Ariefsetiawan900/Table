@@ -45,8 +45,40 @@
 
 
 
-section  {
+section {
     margin-bottom: 20px;
     border-bottom: 1px solid black;
-   
+
+}
+
+@media only screen and (max-width: 767px) {
+
+    section .topup .btn-primary,
+    section .topup .btn-warning {
+        margin-bottom: 0.5rem;
+    }
+
+    section .topdown .btn-primary,
+    section .topdown .btn-warning {
+        margin-bottom: 0.5rem;
+    }
+
+    section .topdown .btn-danger {
+        margin-right: 0.6rem;
+    }
+}
+
+@media only screen and (max-width: 990px) {
+    section .topup .btn-danger {
+        margin-top: 0.6rem;
+    }
+
+    section .topdown .btn-primary,
+    section .topdown .btn-warning {
+        margin-bottom: 0.5rem;
+    }
+
+    section .topdown .btn-danger {
+        margin-right: 0.5rem;
+    }
 }
