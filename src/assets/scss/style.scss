@@ -53,12 +53,10 @@ section {
 
 @media only screen and (max-width: 767px) {
 
-    section .topup .btn-primary,
     section .topup .btn-warning {
         margin-bottom: 0.5rem;
     }
 
-    section .topdown .btn-primary,
     section .topdown .btn-warning {
         margin-bottom: 0.5rem;
     }
@@ -70,10 +68,9 @@ section {
 
 @media only screen and (max-width: 990px) {
     section .topup .btn-danger {
-        margin-top: 0.6rem;
+        margin-top: 0.1rem;
     }
 
-    section .topdown .btn-primary,
     section .topdown .btn-warning {
         margin-bottom: 0.5rem;
     }

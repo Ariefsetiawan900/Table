@@ -48,16 +48,17 @@ export default function MiddleTable() {
         data={posts}
         headers={headers}
         filename={"data-absensi.csv"}
-        className="btn btn-info mb-3"
+        className="btn btn-info mb-3 btn-sm"
         target="_blank"
       >
         Ekspor File.csv
       </CSVLink>
+      {" "}{" "}{" "}
       <CSVLink
         data={posts}
         headers={headers}
         filename={"data-absensi.xls"}
-        className="btn btn-info mb-3 ml-2"
+        className="btn btn-info mb-3 btn-sm "
         target="_blank"
       >
         Ekspor File.excel

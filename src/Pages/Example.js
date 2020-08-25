@@ -1,19 +1,14 @@
-import React from 'react'
-// import Examples from '../parts/Examples'
-// import Ex from '../parts/Ex'
-// import Examp from '../parts/Examp'
+import React, { Component } from 'react'
 import X from '../parts/X'
+// import List from '../parts/List'
 
-
-export default function Example() {
-  return (
-    <>
-     {/* <Examples></Examples>  */}
-     {/* <Ex></Ex> */}
-     {/* <Examp></Examp> */}
-     <X/>
-     
-
-    </>
-  )
+export default class Example extends Component {
+  render() {
+    return (
+      <>
+        <X/>
+        {/* <List/> */}
+      </>
+    )
+  }
 }

@@ -1,66 +1,60 @@
-{
-  "_id": "Nik",
-  "name": "Nama",
-  "location": "Lokasi",
-  "area": "Area",
-  "job": "Security",
-  "value": [
-    {
-      "id": 1190,
-      "name": "Septian",
+[
+
+  {
+    "id": 1190,
+    "name": "Septian",
+    "locations": "Jakarta",
+    "areas": "Emporium Mall",
+    "jobs": "security"
+  },
+  {
+      "id": 1191,
+      "name": "Alex",
       "locations": "Jakarta",
       "areas": "Emporium Mall",
       "jobs": "security"
     },
     {
-        "id": 1191,
-        "name": "Alex",
-        "locations": "Jakarta",
-        "areas": "Emporium Mall",
-        "jobs": "security"
-      },
-      {
-        "id": 1192,
-        "name": "Robert",
-        "locations": "Jakarta",
-        "areas": "Emporium Mall",
-        "jobs": "security"
-      },
-      {
-        "id": 1193,
-        "name": "dwi",
-        "locations": "Jakarta",
-        "areas": "Emporium Mall",
-        "jobs": "security"
-      },
-      {
-        "id": 1194,
-        "name": "kiki",
-        "locations": "Jakarta",
-        "areas": "Emporium Mall",
-        "jobs": "security"
-      },
-      {
-        "id": 1195,
-        "name": "wawan",
-        "locations": "Jakarta",
-        "areas": "Emporium Mall",
-        "jobs": "security"
-      },
-      {
-        "id": 1196,
-        "name": "Love",
-        "locations": "Jakarta",
-        "areas": "Emporium Mall",
-        "jobs": "security"
-      },
-      {
-        "id": 1197,
-        "name": "Ben",
-        "locations": "Jakarta",
-        "areas": "Emporium Mall",
-        "jobs": "security"
-      }
+      "id": 1192,
+      "name": "Robert",
+      "locations": "Jakarta",
+      "areas": "Emporium Mall",
+      "jobs": "security"
+    },
+    {
+      "id": 1193,
+      "name": "dwi",
+      "locations": "Jakarta",
+      "areas": "Emporium Mall",
+      "jobs": "security"
+    },
+    {
+      "id": 1194,
+      "name": "kiki",
+      "locations": "Jakarta",
+      "areas": "Emporium Mall",
+      "jobs": "security"
+    },
+    {
+      "id": 1195,
+      "name": "wawan",
+      "locations": "Jakarta",
+      "areas": "Emporium Mall",
+      "jobs": "security"
+    },
+    {
+      "id": 1196,
+      "name": "Love",
+      "locations": "Jakarta",
+      "areas": "Emporium Mall",
+      "jobs": "security"
+    },
+    {
+      "id": 1197,
+      "name": "Ben",
+      "locations": "Jakarta",
+      "areas": "Emporium Mall",
+      "jobs": "security"
+    }
 
-  ]
-}
+]

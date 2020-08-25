@@ -14,7 +14,7 @@ export default function TopTable() {
   useEffect(() => {
     const fetchPosts = async () => {
       setLoading(true);
-      const res = await axios.get("https://api.mocki.io/v1/50dc256a");
+      const res = await axios.get("https://api.mocki.io/v1/9b24102a");
       setPosts(res.data);
       setLoading(false);
     };
@@ -45,16 +45,17 @@ export default function TopTable() {
         data={posts}
         headers={headers}
         filename={"data-karyawan.csv"}
-        className="btn btn-info mb-3"
+        className="btn btn-info mb-3 btn-sm"
         target="_blank"
       >
         Eksport File.csv
       </CSVLink>
+      {" "}{" "}{" "}
       <CSVLink
         data={posts}
         headers={headers}
         filename={"data-karyawan.xls"}
-        className="btn btn-info mb-3 ml-2"
+        className="btn btn-info mb-3 btn-sm"
         target="_blank"
       >
         Eksport File.excel

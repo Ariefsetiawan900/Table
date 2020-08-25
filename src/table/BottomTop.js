@@ -1,9 +1,9 @@
 import React from "react";
 
 export default function BottomTop({ posts, loading }) {
-  if (loading) {
-    return <h2>Loading...</h2>;
-  }
+  // if (loading) {
+  //   return <h2>Loading...</h2>;
+  // }
   return (
     <div className="table-responsive mb-2">
       <h5>Master Data</h5>
